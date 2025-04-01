@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from models.menu import Menu
-from database.db import db
+from rest_menu.models.menu import Menu
+from rest_menu.database.db import db
 from typing import List
 
 
