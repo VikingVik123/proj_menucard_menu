@@ -1,4 +1,4 @@
-from database.db import db
+from rest_menu.database.db import db
 from sqlmodel import SQLModel, Field
 from typing import Optional, List
 

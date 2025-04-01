@@ -1,0 +1,1 @@
+from rest_menu.models.menu import Menu
