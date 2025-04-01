@@ -1,6 +1,5 @@
 import os
-from fastapi import FastAPI
-from sqlmodel import SQLModel, create_engine
+from sqlmodel import SQLModel, create_engine, Session
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -13,5 +12,9 @@ class database:
 
     def create_db_and_tables(self):
         SQLModel.metadata.create_all(self.engine)
+
+    def get_session(self):
+        session = Session(self.engine)
+        return session
 
 db = database()
