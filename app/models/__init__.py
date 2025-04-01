@@ -1,0 +1,1 @@
+from models.menu import Menu
